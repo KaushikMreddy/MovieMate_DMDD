@@ -41,7 +41,8 @@ The project includes the following database objects:
 4. **IDX_City_State:** An Index on the City (State) Column.
 
 ## Data Visualization
-The data from MovieMate database views have been used to visualize desired details from the database to catch trends and patterns.
+The data from MovieMate database views have been used to visualize desired details from the database to catch trends and patterns using Microsoft PowerBI.
+- PBIX File is present in the MovieMate.Zip and an image of my report is present as a pdf file in the same directory
 
 ## Graphical User Interface (GUI)
 MovieMate is integrated with a graphical user interface built using the Streamlit Python library, allowing users to perform CRUD operations seamlessly.
