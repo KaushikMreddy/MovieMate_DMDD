@@ -62,5 +62,3 @@ To run MovieMate, follow these steps:
 ## Contributors
 - Kaushik Malikireddy, Muskan Agrawal, Shaun Pradeep Dsouza, Kusumanth Reddy Gali, Nikhil Srinivas Regulapati 
 
-## License
-This project is licensed under the [License Name]. See the LICENSE file for details.
