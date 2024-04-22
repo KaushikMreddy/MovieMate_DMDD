@@ -16,13 +16,7 @@ VALUES
 	(7, 'The Avengers', 'A superhero ensemble', 143, 'English', 'PG-13', '2012-05-04', 'Action', 4),
 	(8, 'The Social Network', 'A drama about Facebook', 120, 'English', 'PG-13', '2010-10-01', 'Biography', 4),
 	(9, 'The Great Gatsby', 'A romantic drama', 143, 'English', 'PG-13', '2013-05-10', 'Romance', 3),
-	(10, 'The Shawshank Redemption', 'A story of hope and perseverance', 142, 'English', 'R', '1994-09-23', 'Drama', 5),
-	(11, 'The Martian', 'A sci-fi survival thriller', 144, 'English', 'PG-13', '2015-10-02', 'Sci-Fi', 4),
-	(12, 'Toy Story', 'An animated family film', 81, 'English', 'G', '1995-11-22', 'Animation', 4),
-	(13, 'Jurassic Park', 'An action-adventure', 127, 'English', 'PG-13', '1993-06-11', 'Adventure', 4),
-	(14, 'The Godfather', 'A mafia epic', 175, 'English', 'R', '1972-03-24', 'Crime', 5),
-	(15, 'The Sound of Music', 'A musical drama', 174, 'English', 'G', '1965-03-29', 'Musical', 4),
-	(16, 'The Lion King', 'An animated musical', 88, 'English', 'G', '1994-06-24', 'Animation', 5);
+	(10, 'The Shawshank Redemption', 'A story of hope and perseverance', 142, 'English', 'R', '1994-09-23', 'Drama', 5);
 
 	GO
 
@@ -59,37 +53,74 @@ VALUES
 
 -- Inserting data into Show table
 INSERT INTO Show (Show_ID, Movie_ID, Show_Date, ShowTime)
-VALUES 
-    (1, 1, '2024-03-21', '14:00:00'),
+VALUES
+    (1, 1, '2024-04-10', '14:15:00'),
     (2, 2, '2024-03-21', '15:00:00'),
-	(3, 1, '2024-03-22', '09:00:00.0000000'),
-	(4, 2, '2024-03-22', '13:00:00.0000000'),
-	(5, 3, '2024-03-23', '18:00:00.0000000'),
-	(6, 1, '2024-03-23', '22:00:00.0000000'),
-	(7, 2, '2024-03-24', '10:00:00.0000000'),
-	(8, 3, '2024-03-24', '14:00:00.0000000'),
-	(9, 1, '2024-03-25', '19:00:00.0000000'),
-	(10, 2, '2024-03-25', '23:00:00.0000000'),
-	(11, 3, '2024-03-26', '06:00:00.0000000'),
-	(12, 1, '2024-03-26', '10:00:00.0000000');
+    (3, 1, '2024-03-22', '09:00:00'),
+    (4, 2, '2024-03-22', '13:00:00'),
+    (5, 3, '2024-03-23', '18:00:00'),
+    (6, 1, '2024-03-23', '22:00:00'),
+    (7, 2, '2024-03-24', '10:00:00'),
+    (8, 3, '2024-03-24', '14:00:00'),
+    (9, 1, '2024-03-25', '19:00:00'),
+    (10, 2, '2024-03-25', '23:00:00'),
+    (11, 3, '2024-03-26', '06:00:00'),
+    (12, 1, '2024-03-26', '10:00:00'),
+    (13, 1, '2024-04-23', '09:00:00'),
+    (14, 2, '2024-04-23', '12:00:00'),
+    (16, 1, '2024-04-23', '18:00:00'),
+    (17, 2, '2024-04-24', '09:00:00'),
+    (18, 3, '2024-04-24', '12:00:00'),
+    (20, 2, '2024-04-24', '18:00:00'),
+    (21, 4, '2024-04-25', '09:15:00'),
+    (22, 5, '2024-04-25', '12:00:00'),
+    (23, 6, '2024-04-25', '15:00:00'),
+    (24, 4, '2024-04-25', '18:00:00'),
+    (25, 5, '2024-04-26', '09:00:00'),
+    (26, 6, '2024-04-26', '12:00:00'),
+    (27, 4, '2024-04-26', '15:00:00'),
+    (28, 5, '2024-04-26', '18:00:00'),
+    (29, 7, '2024-04-27', '10:00:00'),
+    (30, 8, '2024-04-27', '13:00:00'),
+    (31, 9, '2024-04-27', '16:00:00'),
+    (32, 10, '2024-04-28', '11:00:00');
+
 
 	GO
 
 -- Inserting data into Screening table
 INSERT INTO Screening (Screen_ID, Show_ID, Total_Seats_Sold)
-VALUES 
-    (1, 1, 30),
+VALUES
+    (1, 1, 23),
     (2, 2, 30),
-	(1, 3, 25),
-	(2, 4, 20),
-	(1, 5, 15),
-	(2, 6, 10),
-	(1, 7, 28),
-	(2, 8, 12),
-	(1, 9, 18),
-	(2, 10, 5),
-	(1, 11, 23),
-	(2, 12, 7);
+    (1, 3, 25),
+    (2, 4, 20),
+    (1, 5, 15),
+    (2, 6, 10),
+    (1, 7, 28),
+    (2, 8, 12),
+    (1, 9, 18),
+    (2, 10, 5),
+    (1, 11, 23),
+    (2, 12, 7),
+    (1, 13, 3),
+    (2, 14, 0),
+    (2, 16, 0),
+    (1, 17, 0),
+    (2, 18, 0),
+    (2, 20, 0),
+    (3, 21, 0),
+    (4, 22, 0),
+    (3, 23, 0),
+    (4, 24, 0),
+    (3, 25, 0),
+    (4, 26, 0),
+    (3, 27, 0),
+    (4, 28, 0),
+    (1, 29, 0),
+    (2, 30, 0),
+    (3, 31, 0),
+    (1, 32, 0);
 
 
 	GO
@@ -134,7 +165,15 @@ VALUES
 INSERT INTO Movie_Staff (Staff_ID, Type, First_Name, Last_Name, Salary, Department, Role)
 VALUES 
     (1, 'Non-Cast', 'John', 'Doe', 50000.00, 'Production', 'Producer'),
-    (2, 'Cast', 'Leonardo', 'DiCaprio', 10000000.00, 'Acting', 'Lead Actor');
+    (2, 'Cast', 'Leonardo', 'DiCaprio', 10000000.00, 'Acting', 'Lead Actor'),
+    (3, 'Non-Cast', 'Jane', 'Smith', 60000.00, 'Production', 'Production Manager'),
+    (4, 'Non-Cast', 'Michael', 'Johnson', 70000.00, 'Production', 'Director'),
+    (5, 'Non-Cast', 'Emily', 'Williams', 55000.00, 'Production', 'Assistant Director'),
+    (6, 'Cast', 'Jennifer', 'Lawrence', 8000000.00, 'Acting', 'Lead Actress'),
+    (7, 'Non-Cast', 'David', 'Brown', 45000.00, 'Production', 'Production Assistant'),
+    (8, 'Non-Cast', 'Jessica', 'Davis', 48000.00, 'Production', 'Costume Designer'),
+    (9, 'Non-Cast', 'Matthew', 'Wilson', 70000.00, 'Production', 'Cinematographer'),
+    (10, 'Non-Cast', 'Olivia', 'Miller', 60000.00, 'Production', 'Script Supervisor');
 
 	GO
 
@@ -142,7 +181,15 @@ VALUES
 INSERT INTO Staff_Assignment (Assignment_ID, Movie_ID, Staff_ID, Role_In_Movie)
 VALUES 
     (1, 1, 1, 'Producer'),
-    (2, 1, 2, 'Lead Actor');
+    (2, 1, 2, 'Lead Actor'),
+    (3, 1, 3, 'Production Manager'),
+    (4, 1, 4, 'Director'),
+    (5, 1, 5, 'Assistant Director'),
+    (6, 1, 6, 'Lead Actress'),
+    (7, 1, 7, 'Production Assistant'),
+    (8, 1, 8, 'Costume Designer'),
+    (9, 1, 9, 'Cinematographer'),
+    (10, 1, 10, 'Script Supervisor');
 
 	GO
 
@@ -208,7 +255,28 @@ VALUES
     ('C7', 2, 1, 0, 'Handicap'),
     ('C8', 2, 1, 0, 'Handicap'),
     ('C9', 2, 1, 0, 'Handicap'),
-    ('C10', 2, 1, 0, 'Handicap');
+    ('C10', 2, 1, 0, 'Handicap'),
+    ('A1', 15, 1, 100, 'Gold'), ('A2', 15, 1, 100, 'Gold'), ('A3', 15, 1, 100, 'Gold'), ('A4', 15, 1, 100, 'Gold'), ('A5', 15, 1, 100, 'Gold'),
+    ('A6', 15, 1, 100, 'Gold'), ('A7', 15, 1, 100, 'Gold'), ('A8', 15, 1, 100, 'Gold'), ('A9', 15, 1, 100, 'Gold'), ('A10', 15, 1, 100, 'Gold'),
+    ('B1', 15, 1, 60, 'Silver'), ('B2', 15, 1, 60, 'Silver'), ('B3', 15, 1, 60, 'Silver'), ('B4', 15, 1, 60, 'Silver'), ('B5', 15, 1, 60, 'Silver'),
+    ('B6', 15, 1, 60, 'Silver'), ('B7', 15, 1, 60, 'Silver'), ('B8', 15, 1, 60, 'Silver'), ('B9', 15, 1, 60, 'Silver'), ('B10', 15, 1, 60, 'Silver'),
+    ('C1', 15, 1, 150, 'Handicap'), ('C2', 15, 1, 150, 'Handicap'), ('C3', 15, 1, 150, 'Handicap'), ('C4', 15, 1, 150, 'Handicap'), ('C5', 15, 1, 150, 'Handicap'),
+    ('C6', 15, 1, 150, 'Handicap'), ('C7', 15, 1, 150, 'Handicap'), ('C8', 15, 1, 150, 'Handicap'), ('C9', 15, 1, 150, 'Handicap'), ('C10', 15, 1, 150, 'Handicap'),
+    ('A1', 16, 1, 100, 'Gold'), ('A2', 16, 1, 100, 'Gold'), ('A3', 16, 1, 100, 'Gold'), ('A4', 16, 1, 100, 'Gold'), ('A5', 16, 1, 100, 'Gold'),
+    ('A6', 16, 1, 100, 'Gold'), ('A7', 16, 1, 100, 'Gold'), ('A8', 16, 1, 100, 'Gold'), ('A9', 16, 1, 100, 'Gold'), ('A10', 16, 1, 100, 'Gold'),
+    ('B1', 16, 1, 60, 'Silver'), ('B2', 16, 1, 60, 'Silver'), ('B3', 16, 1, 60, 'Silver'), ('B4', 16, 1, 60, 'Silver'), ('B5', 16, 1, 60, 'Silver'),
+    ('B6', 16, 1, 60, 'Silver'), ('B7', 16, 1, 60, 'Silver'), ('B8', 16, 1, 60, 'Silver'), ('B9', 16, 1, 60, 'Silver'), ('B10', 16, 1, 60, 'Silver'),
+    ('C1', 16, 1, 150, 'Handicap'), ('C2', 16, 1, 150, 'Handicap'), ('C3', 16, 1, 150, 'Handicap'), ('C4', 16, 1, 150, 'Handicap'), ('C5', 16, 1, 150, 'Handicap'),
+    ('C6', 16, 1, 150, 'Handicap'), ('C7', 16, 1, 150, 'Handicap'), ('C8', 16, 1, 150, 'Handicap'), ('C9', 16, 1, 150, 'Handicap'), ('C10', 16, 1, 150, 'Handicap'),
+    ('A1', 17, 1, 100, 'Gold'), ('A2', 17, 1, 100, 'Gold'), ('A3', 17, 1, 100, 'Gold'), ('A4', 17, 1, 100, 'Gold'), ('A5', 17, 1, 100, 'Gold'),
+    ('A6', 17, 1, 100, 'Gold'), ('A7', 17, 1, 100, 'Gold'), ('A8', 17, 1, 100, 'Gold'), ('A9', 17, 1, 100, 'Gold'), ('A10', 17, 1, 100, 'Gold'),
+    ('B1', 17, 1, 60, 'Silver'), ('B2', 17, 1, 60, 'Silver'), ('B3', 17, 1, 60, 'Silver'), ('B4', 17, 1, 60, 'Silver'), ('B5', 17, 1, 60, 'Silver'),
+    ('B6', 17, 1, 60, 'Silver'), ('B7', 17, 1, 60, 'Silver'), ('B8', 17, 1, 60, 'Silver'), ('B9', 17, 1, 60, 'Silver'), ('B10', 17, 1, 60, 'Silver'),
+    ('C1', 17, 1, 150, 'Handicap'), ('C2', 17, 1, 150, 'Handicap'), ('C3', 17, 1, 150, 'Handicap'), ('C4', 17, 1, 150, 'Handicap'), ('C5', 17, 1, 150, 'Handicap'),
+    ('C6', 17, 1, 150, 'Handicap'), ('C7', 17, 1, 150, 'Handicap'), ('C8', 17, 1, 150, 'Handicap'), ('C9', 17, 1, 150, 'Handicap'), ('C10', 17, 1, 150, 'Handicap');
+
+	
+
 
 
 	----------------------Stored Procedures---------------------------
@@ -591,7 +659,7 @@ VALUES
 	-- Step 4: Assign read and write roles to the user
 	EXEC sp_addrolemember 'db_datareader', 'team16';
 	EXEC sp_addrolemember 'db_datawriter', 'team16';
-	GRANT execute to team16
+	GRANT executeÂ toÂ team16
 
 
 
